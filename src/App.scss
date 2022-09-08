@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@100;300;400&family=Work+Sans:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@100;300;400;500&family=Work+Sans:wght@300;500&display=swap");
 
 :root {
   /* FONTS */
@@ -35,7 +35,7 @@
   --clr-neutral-black: hsl(0deg 0% 0%);
 
   --clr-background-light_blue: hsl(200deg 100% 96%);
-  --clr-background-blue: hsl(206deg 100% 23% / 71%);
+  --clr-background-blue: #004274;
   --clr-background-dark_blue: hsl(206deg 100% 18%);
 }
 
@@ -63,6 +63,21 @@
   font-size: var(--fs-default);
   font-weight: var(--fw-regular);
   color: var(--clr-bodytext-gray);
+}
+.container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  background-color: var(--clr-primary-cyan);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-family: var(--ff-body);
+  font-size: 15px;
+  cursor: pointer;
 }
 
 // CSS RESET //
