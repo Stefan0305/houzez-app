@@ -5,10 +5,11 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-
+import Header from "./components/Header/Header";
 function App() {
   return (
     <div>
+      <Header/>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}></Route>
