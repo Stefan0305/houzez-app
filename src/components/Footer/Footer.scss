@@ -1,0 +1,131 @@
+.upperSection {
+  background-color: var(--clr-background-blue);
+  padding: 100px 0 70px 0;
+}
+
+.copyrightSection {
+  background-color: var(--clr-background-dark_blue);
+}
+
+footer {
+  color: white;
+  h4 {
+    font-weight: var(--fw-bold);
+    font-family: var(--ff-body);
+    font-size: var(--fs-default);
+  }
+  p,
+  a {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-regular);
+    line-height: 25px;
+  }
+}
+
+.footerContainer {
+  display: flex;
+  gap: 5%;
+}
+
+.about,
+.contact {
+  width: 25%;
+  > div {
+    margin-bottom: 20px;
+  }
+  i {
+    margin-right: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s;
+    &:hover {
+      color: #00aeef;
+    }
+  }
+}
+
+.contact p {
+  margin-bottom: 10px;
+}
+
+.footer-cta-btn {
+  font-weight: var(--fw-bold);
+}
+
+.newsletter {
+  width: 50%;
+  > div {
+    margin-bottom: 20px;
+  }
+}
+
+.newsletterInput {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  input {
+    flex-grow: 1;
+    border: 1px solid #dce0e0;
+    border-radius: 5px;
+    padding-left: 15px;
+    color: #222222;
+    font-family: var(--ff-body);
+    font-size: 15px;
+    font-weight: var(--fw-medium);
+    &::placeholder {
+      opacity: 50%;
+    }
+    &:focus {
+      outline: none;
+      border-color: var(--clr-primary-cyan);
+      //   color: rgba($color: #222222, $alpha: 0.5);
+    }
+  }
+  button {
+    width: 180px;
+  }
+}
+
+.copyrightSection{
+  padding: 30px 0;
+}
+
+.copyrightSection > :first-child{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-family: var(--ff-heading);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-regular);
+}
+
+.footerNav{
+  ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s;
+    &:hover {
+      color: #00AEEF;
+    }
+  }
+}
+
+.footerSocial{
+  i{
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.2s;
+    &:hover {
+      color: #00AEEF;
+    }
+  }
+}
