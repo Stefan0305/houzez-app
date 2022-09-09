@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.scss";
-
 function Footer() {
   return (
     <footer>
@@ -29,7 +28,7 @@ function Footer() {
             </div>
             <div>
               <p>
-                <i className="fa fa-map-marker"></i>774 NE 84th St Miami, FL
+              <i className="fa fa-location-dot"></i> 774 NE 84th St Miami, FL
                 33879
               </p>
               <p>
@@ -73,7 +72,27 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="copyrightSection"></div>
+      <div className="copyrightSection">
+        <div className="container">
+          <div className="copyright">
+            © Houzez - All rights reserved
+          </div>
+          <div className="footerNav">
+            <ul>
+              <li><a href='#'>Privacy</a></li>
+              <li><a href='#'>Terms and Conditions</a></li>
+              <li><a href='/contact'>Contact</a></li>
+            </ul>
+          </div>
+          <div className="footerSocial">
+          <i className="fa-brands fa-facebook-f"></i>
+          <i className="fa-brands fa-twitter"></i>
+          <i className="fa-brands fa-google-plus-g"></i>
+          <i className="fa-brands fa-linkedin-in"></i>
+          <i className="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 }
