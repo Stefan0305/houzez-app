@@ -1,0 +1,113 @@
+// utility classes
+.clip-bottom {
+  height: 101px;
+  width: 100vw;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  position: absolute;
+  bottom: -100px;
+}
+
+.clip-top {
+  height: 101px;
+  width: 100vw;
+  background-color: white;
+  //   background-color: brown;
+  clip-path: polygon(0 100%, 100% 100%, 100% 0);
+  position: absolute;
+  top: -100px;
+}
+
+// styling
+.hero-section-container {
+  position: relative;
+}
+.hero-section-heading {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 52, 92, 0.3),
+      rgba(0, 52, 92, 1)
+    ),
+    url("../../../public/images/miami.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 60vh;
+}
+
+.hero-section-cta {
+  background-color: var(--clr-background-dark_blue);
+  .container {
+    padding: 50px 150px 150px 150px;
+    display: flex;
+    gap: 1px;
+  }
+}
+
+.cta-cards {
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(242, 41, 91, 0) 100%
+  );
+  padding: 50px 50px;
+  text-align: center;
+}
+
+.features-section-container {
+  position: relative;
+  height: 70vh;
+  width: 100vw;
+}
+
+.widgets-section-container {
+  height: 80vh;
+  width: 100vw;
+  padding-top: 100px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 52, 92, 0.4),
+      rgba(0, 52, 92, 0.4)
+    ),
+    url("../../../public/images/apartment-4.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.grid-section-container {
+  position: relative;
+  height: 70vh;
+  width: 100vw;
+}
+
+.forms-section-container {
+  height: 70vh;
+  width: 100vw;
+  background-color: skyblue;
+  padding-top: 100px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 52, 92, 0.4),
+      rgba(0, 52, 92, 0.4)
+    ),
+    url("../../../public/images/apartment-1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.content-types-section-container {
+  position: relative;
+  height: 70vh;
+  width: 100vw;
+}
+
+.agents-section-container {
+  height: 70vh;
+  width: 100vw;
+  background-color: #f8f8f8;
+}
+
+.testimonials-section-container {
+  height: 70vh;
+  width: 100vw;
+  border-bottom: 1px solid lightgray;
+}
