@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Home.scss";
 
 function Home() {
@@ -58,8 +59,33 @@ function Home() {
             Houzez offers a wide range of drag-and-drop widgets to assist you in
             designing your pages
           </div>
+          <div className="widgets">
+            <Link to="/#">
+              <div className="widget">
+                <img src="/images/buy.png" alt="BUY" />
+                <p>looking to buy</p>
+              </div>
+            </Link>
+            <Link to="/#">
+              <div className="widget">
+                <img src="/images/sell.png" alt="SELL" />
+                <p>sell your home</p>
+              </div>
+            </Link>
+            <Link to="/#">
+              <div className="widget">
+                <img src="/images/rent.png" alt="RENT" />
+                <p>rent a place</p>
+              </div>
+            </Link>
+            <Link to="/#">
+              <div className="widget">
+                <img src="/images/help.png" alt="HELP" />
+                <p>need help?</p>
+              </div>
+            </Link>
+          </div>
         </div>
-        <div className="widgets"></div>
       </section>
 
       <section className="grid-section-container">
