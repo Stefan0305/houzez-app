@@ -1,0 +1,99 @@
+header{
+    background-color: var(--clr-background-dark_blue);
+    color: white;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+header > :first-child{
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--ff-title);
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-bold);
+    align-items: center;
+}
+
+.headerNav{
+    >ul{
+        list-style-type: none;
+        display: flex;
+        >li{
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+            >a{
+                display: inline-block;
+                width: 100%;
+                padding: 40px 30px;
+            }
+        }
+    }
+}
+.toggleDropDown{
+    position: relative;
+
+    &:hover{
+        .dropdownMenu{
+            display: inline-block;
+        }
+    }
+}
+
+.dropdownMenu{
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: 200px;
+    z-index: 3;
+    left: 0;
+    top: 101px;
+    >li{
+        border-bottom: 1px solid #e6e6e6;
+        &:hover{
+            background-color: rgba(0, 176, 240, 0.1);
+            >a{
+                color: var(--clr-primary-cyan);
+                width: 100%;
+            }
+        }
+        a{
+            color: #2e3e49;
+            display: block;
+            padding: 15px 10px;
+        }
+    }
+}
+
+
+.profileContainer{
+    i{
+        margin-right: 30px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    button{
+        // border: 1px solid white;
+        border: none;
+        // background-color: rgba(255, 255, 255, 0.2);
+        background-color: var(--clr-primary-cyan);
+        padding: 8px 15px;
+        color: white;
+        font-family: var(--ff-title);
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        font-size: var(--fs-xs);
+        font-weight: var(--fw-bold);
+        border-radius: 3px;
+        cursor: pointer;
+        &:hover{
+            filter: brightness(115%);
+        }
+    }
+
+}
