@@ -22,9 +22,13 @@ header > :first-child{
         list-style-type: none;
         display: flex;
         >li{
-            padding: 40px 30px;
             &:hover{
                 background-color: rgba(255, 255, 255, 0.1);
+            }
+            >a{
+                display: inline-block;
+                width: 100%;
+                padding: 40px 30px;
             }
         }
     }
@@ -51,7 +55,6 @@ header > :first-child{
     top: 101px;
     >li{
         border-bottom: 1px solid #e6e6e6;
-        padding: 15px 10px;
         &:hover{
             background-color: rgba(0, 176, 240, 0.1);
             >a{
@@ -61,6 +64,8 @@ header > :first-child{
         }
         a{
             color: #2e3e49;
+            display: block;
+            padding: 15px 10px;
         }
     }
 }
@@ -70,7 +75,7 @@ header > :first-child{
     i{
         margin-right: 30px;
         cursor: pointer;
-        font-size: var(--fs-xs);
+        font-size: 18px;
     }
     button{
         // border: 1px solid white;

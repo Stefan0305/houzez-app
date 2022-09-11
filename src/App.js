@@ -9,16 +9,17 @@ import Header from "./components/Header/Header";
 function App() {
   return (
     <div>
-      <Header/>
       <BrowserRouter>
+      <Header/>
+
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/about" element={<About />}></Route>
         </Routes>
-      </BrowserRouter>
+        <Footer />
 
-      <Footer />
+      </BrowserRouter>
     </div>
   );
 }
