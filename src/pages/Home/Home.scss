@@ -61,6 +61,7 @@
 
 .widgets-section-container {
   padding: 200px;
+  padding-top: 100px;
   background-image: linear-gradient(
       to bottom,
       rgba(0, 52, 92, 0.4),
@@ -156,4 +157,13 @@
   height: 70vh;
   width: 100vw;
   border-bottom: 1px solid lightgray;
+}
+
+// sponsors section
+.sponsors-section-container {
+  .sponsors {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+  }
 }

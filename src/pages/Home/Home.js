@@ -164,7 +164,32 @@ function Home() {
 
       <section className="sponsors-section-container">
         <div className="container">
-          <div className="sponsors">SPONSORS HERE</div>
+          <div className="sponsors">
+            <div className="sponsor">
+              <img src="/images/sponsors/wildridge.jpg" alt="wildridge" />
+            </div>
+            <div className="sponsor">
+              <img src="/images/sponsors/hillstrom.jpg" alt="hillstrom" />
+            </div>
+            <div className="sponsor">
+              <img
+                src="/images/sponsors/horizon-homes.jpg"
+                alt="horizon homes"
+              />
+            </div>
+            <div className="sponsor">
+              <img
+                src="/images/sponsors/home-realestate.jpg"
+                alt="home real estate"
+              />
+            </div>
+            <div className="sponsor">
+              <img
+                src="/images/sponsors/charles-bentley.jpg"
+                alt="charles bentley"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </main>
