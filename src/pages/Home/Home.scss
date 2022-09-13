@@ -148,9 +148,76 @@
 }
 
 .agents-section-container {
-  height: 70vh;
-  width: 100vw;
   background-color: #f8f8f8;
+  .container {
+    padding: 100px 0;
+  }
+  .agents-header {
+    margin-bottom: 50px;
+    h3 {
+      font-family: var(--ff-heading);
+      font-weight: var(--fw-medium);
+      font-size: var(--fs-secondary-heading);
+      text-align: center;
+    }
+    p {
+      font-family: var(--ff-body);
+      font-weight: var(--fw-regular);
+      font-size: 18px;
+      color: #7a7a7a;
+      text-align: center;
+    }
+  }
+  .agents-body {
+    display: flex;
+
+    .agent-card {
+      text-align: center;
+      padding: 30px;
+      width: 100%;
+      background-color: white;
+      transition: all 0.2s;
+      &:hover {
+        box-shadow: 0px 60px 100px 5px rgba($color: black, $alpha: 0.3);
+        transform: translateY(-10px);
+      }
+      img {
+        width: 150px;
+        border-radius: 50%;
+        margin: auto;
+        margin-bottom: 30px;
+      }
+      .agent-name,
+      .agent-profile {
+        text-decoration: none;
+        font-family: var(--ff-body);
+        font-size: 15px;
+        color: var(--clr-primary-cyan);
+        font-weight: 600;
+        line-height: 24px;
+      }
+      .agent-position {
+        font-family: var(--ff-body);
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 30px;
+      }
+      .agent-description {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* number of lines to show */
+        -webkit-box-orient: vertical;
+        margin-bottom: 30px;
+        text-align: center;
+        color: 636363;
+        font-family: var(--ff-body);
+        font-size: 15px;
+        font-weight: var(--fw-regular);
+        line-height: 24px;
+      }
+    }
+  }
 }
 
 .testimonials-section-container {

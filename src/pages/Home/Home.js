@@ -148,7 +148,84 @@ function Home() {
             <h3>Meet Our Agents</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
           </div>
-          <div className="agents-body"></div>
+          <div className="agents-body">
+            <div className="agent-card">
+              <a href="#">
+                <img src="/images/agents/agent-1.jpg" alt="Samuel Palmer" />
+              </a>
+              <a href="#" className="agent-name">
+                Samuel Palmer
+              </a>
+              <p className="agent-position">
+                Company Agent , Modern House Real Estate
+              </p>
+              <p className="agent-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda nesciunt tempora ratione doloribus quas aut deleniti
+                cumque obcaecati molestiae esse!
+              </p>
+              <a href="#" className="agent-profile">
+                View Profile
+              </a>
+            </div>
+            <div className="agent-card">
+              <a href="#">
+                <img src="/images/agents/agent-2.jpg" alt="Vincent Fuller" />
+              </a>
+              <a href="#" className="agent-name">
+                Vincent Fuller
+              </a>
+              <p className="agent-position">
+                Company Agent , Country House Real Estate
+              </p>
+              <p className="agent-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
+                sequi hic unde est libero fugiat totam excepturi error atque
+                exercitationem!
+              </p>
+              <a href="#" className="agent-profile">
+                View Profile
+              </a>
+            </div>
+            <div className="agent-card">
+              <a href="#">
+                <img src="/images/agents/agent-3.jpg" alt="Brittany Watkins" />
+              </a>
+              <a href="#" className="agent-name">
+                Brittany Watkins
+              </a>
+              <p className="agent-position">
+                Company Agent , All American Real Estate
+              </p>
+              <p className="agent-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius
+                laborum repudiandae sequi. Numquam quibusdam sint, hic explicabo
+                aliquid necessitatibus quidem?
+              </p>
+              <a href="#" className="agent-profile">
+                View Profile
+              </a>
+            </div>
+            <div className="agent-card">
+              <a href="#">
+                <img src="/images/agents/agent-4.jpg" alt="Michelle Ramirez" />
+              </a>
+              <a href="#" className="agent-name">
+                Michelle Ramirez
+              </a>
+              <p className="agent-position">
+                Company Agent , Modern House Real Estate
+              </p>
+              <p className="agent-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At nisi
+                delectus aperiam dolor dolorum sed qui eos, consectetur illum
+                quasi!
+              </p>
+              <a href="#" className="agent-profile">
+                View Profile
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
