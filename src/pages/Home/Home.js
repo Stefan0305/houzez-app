@@ -135,7 +135,53 @@ function Home() {
               inbox to keep your work everything on track.
             </p>
           </div>
-          <div className="form"></div>
+          <div className="form">
+            <form method="POST">
+            <fieldset>
+              <legend>Inquiry Type</legend>
+              <select>
+                <option>Select</option>
+                <option>Purchase</option>
+                <option>Rent</option>
+                <option>Sell</option>
+                <option>Miss</option>
+                <option>Evaluation</option>
+                <option>Mortgage</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <legend>Your Information</legend>
+              <select>
+                <option>I'm a</option>
+                <option>I'm a real estate agent</option>
+                <option>I'm a property owner</option>
+              </select>
+              <input className="smallFieldInput odd" type="text" placeholder="First Name"></input>
+              <input className="smallFieldInput" type="text" placeholder="Last Name"></input>
+              <input type="email" placeholder="Email Address"></input>
+            </fieldset>
+            <fieldset>
+              <legend>Property Details</legend>
+              <select>
+                <option value="">Select type</option>
+                <option value="">Apartment</option>
+                <option value="">Condo</option>
+                <option value="">Lot</option>
+                <option value="">Multi family home</option>
+                <option value="">Office</option>
+                <option value="">Shop</option>
+                <option value="">Single family home</option>
+                <option value="">Studio</option>
+                <option value="">Villa</option>
+              </select>
+              <input type="number" className="smallFieldInput odd" placeholder="Max Price" />
+              <input type="number" className="smallFieldInput" placeholder="Minimum Size(Sq Ft)"/>
+              <input type="number" className="smallFieldInput odd" placeholder="Number of beds"/>
+              <input type="number" className="smallFieldInput" placeholder="Number of baths" />
+             </fieldset>
+             <input type="submit" value="Submit" className="btn"></input>
+            </form>
+          </div>
         </div>
       </section>
 
