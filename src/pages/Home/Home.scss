@@ -113,7 +113,7 @@
 .hero-section-cta {
   background-color: var(--clr-background-dark_blue);
   .container {
-    padding: 50px 150px 150px 150px;
+    padding: 50px 0 200px 0;
     display: flex;
     gap: 1px;
   }
@@ -126,9 +126,37 @@
     rgba(255, 255, 255, 0.1) 0%,
     rgba(242, 41, 91, 0) 100%
   );
-  padding: 50px 50px;
+  padding: 50px 35px;
   text-align: center;
+  color: white;
+  font-family: var(--ff-body);
+  transition: all 0.2s;
+  &:hover {
+    box-shadow: 0px 60px 100px 5px rgba($color: black, $alpha: 0.3);
+    transform: translateY(-10px);
+  }
+  >h4{
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-title);
+    margin-bottom: 10px;
+  }
+  >p{
+    font-size: 17px;
+    line-height: 1.5em;
+    font-weight: var(--fw-regular);
+    color: rgba(255, 255, 255, 0.78);
+    margin-bottom: 20px;
+  }
+  >a{
+    text-decoration: none;
+    font-family: var(--ff-body);
+    font-size: 15px;
+    color: var(--clr-primary-cyan);
+    font-weight: 500;
+    line-height: 24px;
+  }
 }
+
 
 .features-section-container {
   position: relative;
@@ -137,12 +165,11 @@
 }
 
 .widgets-section-container {
-  padding: 200px;
-  padding-top: 100px;
+  padding: 200px 100px 200px 100px;
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 52, 92, 0.4),
-      rgba(0, 52, 92, 0.4)
+      rgba(0, 66, 116, 0.45),
+      rgba(0, 66, 116, 0.45)
     ),
     url("../../../public/images/apartment-1.jpg");
   background-size: cover;
@@ -154,7 +181,7 @@
     font-weight: var(--fw-thin);
     color: white;
     text-align: center;
-    padding: 50px 150px;
+    padding: 50px 120px;
   }
 
   .widgets {
