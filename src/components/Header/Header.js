@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './Header.scss';
 import {Link} from 'react-router-dom';
 function Header(){
-
-
+    const [locationPath, setLocationPath] = useState(window.location.pathname);
+    const [isHome, setIsHome] = useState()
+    useEffect(()=>{
+        if(locationPath==='/'){
+            setIsHome(true);
+        }else{
+            setIsHome(false);
+        }
+    }, [locationPath])
     return (
-        <header>
+        <header className={isHome ? "home" : ""}>
             <div className="container">
                 <div className="logo">
-                    <Link to='/'><img src="/logo-houzez-white.png" alt="logo" /></Link>
+                    <a href='/'><img src="/logo-houzez-white.png" alt="logo" /></a>
                 </div>
                 <div className="headerNav">
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li className="toggleDropDown"><a href="#">Listing <i className='fa-solid fa-angle-down' style={{marginLeft: "5px"}}></i></a>
                         <ul className="dropdownMenu">
                             <li><a href="#">Appartment</a></li>
@@ -23,8 +30,8 @@ function Header(){
                             <li><a href="#">Villa</a></li>
                         </ul>
                         </li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/about">About us</a></li>
+                        <li><a href='/contact'>Contact</a></li>
                     </ul>
                 </div>
                 <div className="profileContainer">

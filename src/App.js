@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import React, {useState, useEffect} from "react";
 import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
@@ -7,6 +8,7 @@ import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 function App() {
+
   return (
     <div>
       <BrowserRouter>
