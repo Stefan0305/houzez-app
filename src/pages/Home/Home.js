@@ -9,12 +9,14 @@ function Home() {
           <div className="overlayHero"></div>
           <div className="overlayText">
             <h1>Welcome to Houzez 2.0</h1>
-            <p>Packed with 100+ new features and improvements, it is the biggest all-in-one solution for real estate companies and professionals</p>
+            <p>
+              Packed with 100+ new features and improvements, it is the biggest
+              all-in-one solution for real estate companies and professionals
+            </p>
           </div>
-          <img src='/images/miami-beach.jpg'></img>
-          <img src='/images/new-york.jpg'></img>
-          <img src='/images/chicago-city.jpg'></img>
-
+          <img src="/images/miami-beach.jpg"></img>
+          <img src="/images/new-york.jpg"></img>
+          <img src="/images/chicago-city.jpg"></img>
         </div>
         <div className="hero-section-cta">
           <div className="container">
@@ -149,9 +151,82 @@ function Home() {
             </p>
           </div>
         </div>
-        <div className="content-types"></div>
-      </section>
+        <div className="content-types">
+          <div className="container">
+            <div className="row">
+              <a href="#" className="big-box">
+                <div className="content-box">
+                  <div className="box-overlay"></div>
+                  <h4>Appartment</h4>
+                  <p>17 properties</p>
+                </div>
+              </a>
+              <a href="#" className="small-box">
+                <div className="content-box">
+                  <div className="box-overlay"></div>
+                  <h4>Villa</h4>
+                  <p>10 properties</p>
+                </div>
+              </a>
+              <a href="#" className="small-box">
+                <div className="content-box">
+                  <div className="box-overlay"></div>
+                  <h4>Single family home</h4>
+                  <p>10 properties</p>
+                </div>
+              </a>
+            </div>
 
+            <div className="row">
+              <a href="" className="small-box">
+                <div className="content-box">
+                  <div className="box-overlay"></div>
+                  <h4>Studio</h4>
+                  <p>7 properties</p>
+                </div>
+              </a>
+              <a href="#" className="small-box">
+                <div className="content-box">
+                  <div className="box-overlay"></div>
+                  <h4>shop</h4>
+                  <p>3 properties</p>
+                </div>
+              </a>
+              <a href="#" className="big-box">
+                <div className="content-box">
+                  <div className="box-overlay"></div>
+                  <h4>office</h4>
+                  <p>3 properties</p>
+                </div>
+              </a>
+            </div>
+
+            <div className="row">
+              <a href="#" className="big-box">
+                <div className="content-box">
+                  <div className="box-overlay"></div>
+                  <h4>condo</h4>
+                  <p>1 property</p>
+                </div>
+              </a>
+              <a href="#" className="small-box">
+                <div className="content-box">
+                  <div className="box-overlay"></div>
+                  <h4>lot</h4>
+                  <p>1 property</p>
+                </div>
+              </a>
+              <a href="#" className="small-box">
+                <div className="content-box">
+                  <div className="box-overlay"></div>
+                  <h4>multi family home</h4>
+                  <p>1 property</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="agents-section-container">
         <div className="container">
           <div className="agents-header">
