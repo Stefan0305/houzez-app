@@ -5,7 +5,17 @@ function Home() {
   return (
     <main>
       <section className="hero-section-container">
-        <div className="hero-section-heading"></div>
+        <div className="hero-section-heading">
+          <div className="overlayHero"></div>
+          <div className="overlayText">
+            <h1>Welcome to Houzez 2.0</h1>
+            <p>Packed with 100+ new features and improvements, it is the biggest all-in-one solution for real estate companies and professionals</p>
+          </div>
+          <img src='/images/miami-beach.jpg'></img>
+          <img src='/images/new-york.jpg'></img>
+          <img src='/images/chicago-city.jpg'></img>
+
+        </div>
         <div className="hero-section-cta">
           <div className="container">
             <div className="cta-cards">

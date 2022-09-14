@@ -1,7 +1,7 @@
 // utility classes
 .clip-bottom {
   height: 101px;
-  width: 100vw;
+  width: 100%;
   background-color: white;
   clip-path: polygon(0 0, 100% 0, 0 100%);
   position: absolute;
@@ -10,7 +10,7 @@
 
 .clip-top {
   height: 101px;
-  width: 100vw;
+  width: 100%;
   background-color: white;
   //   background-color: brown;
   clip-path: polygon(0 100%, 100% 100%, 100% 0);
@@ -23,16 +23,92 @@
   position: relative;
 }
 .hero-section-heading {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 52, 92, 0.3),
-      rgba(0, 52, 92, 1)
-    ),
-    url("../../../public/images/miami.jpg");
-  background-size: cover;
-  width: 100vw;
-  height: 60vh;
+  // background-image: linear-gradient(
+  //     to bottom,
+  //     rgba(0, 52, 92, 0.3),
+  //     rgba(0, 52, 92, 1)
+  //   ),
+  //   url("../../../public/images/miami-beach.jpg");
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  z-index: 0;
+  overflow: hidden;
+
+  img{
+    width: 100%;
+    height: 100%;
+    animation: 18s autoplay6 infinite linear, 6s zoom-in infinite ease-in;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.0;
+  }
+  .overlayHero{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+           to bottom,
+           rgba(0, 52, 92, 0.3),
+           rgba(0, 52, 92, 1)
+         );
+  }
+  .overlayText{
+    position: absolute;
+    top:58%;
+    left:50%;
+    z-index: 4;
+    display: inline-block;
+    width: 54%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    opacity: 1;
+    animation: fade-in 2s normal ease-in-out;
+    >h1{
+      font-size: var(--fs-primary-heading);
+      font-family: var(--ff-heading);
+      letter-spacing: -1px;
+      font-weight: var(--fw-regular);
+      margin-bottom: 4px;
+    }
+    >p{
+      font-family: var(--ff-body);
+      font-size: var(--fs-primary-heading-body);
+      font-weight: var(--fw-regular);
+      line-height: 1.5em;
+    }
+  }
 }
+
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes zoom-in{
+  100%{
+    transform: scale(1.1);
+  }
+}
+
+@keyframes autoplay6 {
+  0% {opacity: 0.0}
+  4% {opacity: 1.0}
+  33.33% {opacity: 1.0}
+  37.33% {opacity: 0.0}
+  100% {opacity: 0.0}
+}
+.hero-section-heading > img:nth-child(3) {animation-delay: 0s}
+.hero-section-heading > img:nth-child(4) {animation-delay: 6s}
+.hero-section-heading > img:nth-child(5) {animation-delay: 12s}
 
 .hero-section-cta {
   background-color: var(--clr-background-dark_blue);
@@ -41,6 +117,7 @@
     display: flex;
     gap: 1px;
   }
+
 }
 
 .cta-cards {
@@ -56,7 +133,7 @@
 .features-section-container {
   position: relative;
   height: 70vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .widgets-section-container {
@@ -123,12 +200,12 @@
 .grid-section-container {
   position: relative;
   height: 70vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .forms-section-container {
   height: 70vh;
-  width: 100vw;
+  width: 100%;
   background-color: skyblue;
   padding-top: 100px;
   background-image: linear-gradient(
@@ -144,7 +221,7 @@
 .content-types-section-container {
   position: relative;
   height: 70vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .agents-section-container {
@@ -222,7 +299,7 @@
 
 .testimonials-section-container {
   height: 70vh;
-  width: 100vw;
+  width: 100%;
   border-bottom: 1px solid lightgray;
 }
 
