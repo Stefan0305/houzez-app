@@ -104,19 +104,85 @@ function Home() {
         <div className="clip-top"></div>
         <div className="container">
           <div className="grid">
-            <div className="grid-header">
-              <h3>You Can Design Clean And Modern Grid Layouts</h3>
-              <p>
-                Grids are the backbone of all layouts, infographics and
-                presentations
-              </p>
+            <div className="column">
+              <div className="grid-header small-box">
+                <h3>You Can Design Clean And Modern Grid Layouts</h3>
+                <p>
+                  Grids are the backbone of all layouts, infographics and
+                  presentations
+                </p>
+              </div>
+              <div className="grid-item big-box" >
+                <div className="box-overlay"></div>
+                <div className="grid-title">
+                  <p>7 Properties</p>
+                  <h4>Studio</h4>
+                </div>
+                <div className="grid-details">
+                  <p>MORE DETAILS</p>
+                  <i class="fa-solid fa-caret-right"></i>
+                  </div>
+              </div>
             </div>
-            <div className="grid-item"></div>
-            <div className="grid-item"></div>
-            <div className="grid-item"></div>
-            <div className="grid-item"></div>
-            <div className="grid-item"></div>
-            <div className="grid-item"></div>
+            <div className="column">
+            <div className="grid-item medium-box">
+            <div className="box-overlay"></div>
+                <div className="grid-title">
+                  <p>17 Properties</p>
+                  <h4>Apartment</h4>
+                </div>
+                <div className="grid-details">
+                  <p>MORE DETAILS</p>
+                  <i class="fa-solid fa-caret-right"></i>
+                  </div>
+              </div>
+              <div className="grid-item small-box">
+              <div className="box-overlay"></div>
+                <div className="grid-title">
+                  <p>10 Properties</p>
+                  <h4>Single Family Home</h4>
+                </div>
+                <div className="grid-details">
+                  <p>MORE DETAILS</p>
+                  <i class="fa-solid fa-caret-right"></i>
+                  </div>
+              </div>
+              <div className="grid-item medium-box">
+              <div className="box-overlay"></div>
+                <div className="grid-title">
+                  <p>3 Properties</p>
+                  <h4>Shop</h4>
+                </div>
+                <div className="grid-details">
+                  <p>MORE DETAILS</p>
+                  <i class="fa-solid fa-caret-right"></i>
+                  </div>
+              </div>
+            </div>
+            <div className="column">
+            <div className="grid-item big-box">
+            <div className="box-overlay"></div>
+                <div className="grid-title">
+                  <p>3 Properties</p>
+                  <h4>Office</h4>
+                </div>
+                <div className="grid-details">
+                  <p>MORE DETAILS</p>
+                  <i class="fa-solid fa-caret-right"></i>
+                  </div>
+              </div>
+              <div className="grid-item small-box">
+              <div className="box-overlay"></div>
+                <div className="grid-title">
+                  <p>10 Properties</p>
+                  <h4>Villa</h4>
+                </div>
+                <div className="grid-details">
+                  <p>MORE DETAILS</p>
+                  <i class="fa-solid fa-caret-right"></i>
+                  </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="clip-bottom"></div>

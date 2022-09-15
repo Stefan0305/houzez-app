@@ -240,8 +240,108 @@
 
 .grid-section-container {
   position: relative;
-  height: 70vh;
+  padding: 120px 0;
   width: 100%;
+  .big-box{
+    height: 75%;
+  }
+  .small-box{
+    height: 25%;
+  }
+  .medium-box{
+    height: 37.5%;
+  }
+  .grid{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    height: 850px;
+    .column{
+      display: flex;
+      flex-direction: column;
+      width: 33%;
+      height: 100%;
+      padding: 0px 12px;
+    }
+    .grid-header{
+      margin: 12px 0;
+      padding: 0;
+      h3{
+        font-family: var(--ff-heading);
+        font-size: 30px;
+        font-weight: var(--fw-medium);
+        line-height: 1.3em;
+        letter-spacing: -1px;
+        margin-bottom: 10px;
+      }
+      p{
+        font-family: var(--ff-body);
+        font-size: var(--fs-default);
+        font-weight: var(--fw-regular);
+        line-height: 1.5em;
+      }
+    }
+    .grid-item{
+      background-image: url("../../../public/images/apartment-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 3px;
+    position: relative;
+    margin: 12px 0;
+    padding: 30px 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .box-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 2;
+      transition: all 0.2s;
+      border-radius: 3px;
+    }
+
+    &:hover {
+      .box-overlay {
+        background-color: rgba($color: #000000, $alpha: 0.1);
+      }
+    }
+
+    .grid-details{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 5;
+      i{
+        font-size: 22px;
+      }
+      p{
+        font-family: var(--ff-body);
+        font-weight: var(--fw-regular);
+        font-size: var(--fs-xxs);
+      }
+    }
+    .grid-title{
+      z-index: 5;
+      font-family: var(--ff-heading);
+      font-weight: var(--fw-regular);
+      p{
+        font-size: var(--fs-xxs);
+      }
+      h4{
+        font-size: var(--fs-title);
+      }
+    }
+
+    }
+  }
+  
 }
 
 .forms-section-container {
