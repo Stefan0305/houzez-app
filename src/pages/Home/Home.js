@@ -137,49 +137,73 @@ function Home() {
           </div>
           <div className="form">
             <form method="POST">
-            <fieldset>
-              <legend>Inquiry Type</legend>
-              <select>
-                <option>Select</option>
-                <option>Purchase</option>
-                <option>Rent</option>
-                <option>Sell</option>
-                <option>Miss</option>
-                <option>Evaluation</option>
-                <option>Mortgage</option>
-              </select>
-            </fieldset>
-            <fieldset>
-              <legend>Your Information</legend>
-              <select>
-                <option>I'm a</option>
-                <option>I'm a real estate agent</option>
-                <option>I'm a property owner</option>
-              </select>
-              <input className="smallFieldInput odd" type="text" placeholder="First Name"></input>
-              <input className="smallFieldInput" type="text" placeholder="Last Name"></input>
-              <input type="email" placeholder="Email Address"></input>
-            </fieldset>
-            <fieldset>
-              <legend>Property Details</legend>
-              <select>
-                <option value="">Select type</option>
-                <option value="">Apartment</option>
-                <option value="">Condo</option>
-                <option value="">Lot</option>
-                <option value="">Multi family home</option>
-                <option value="">Office</option>
-                <option value="">Shop</option>
-                <option value="">Single family home</option>
-                <option value="">Studio</option>
-                <option value="">Villa</option>
-              </select>
-              <input type="number" className="smallFieldInput odd" placeholder="Max Price" />
-              <input type="number" className="smallFieldInput" placeholder="Minimum Size(Sq Ft)"/>
-              <input type="number" className="smallFieldInput odd" placeholder="Number of beds"/>
-              <input type="number" className="smallFieldInput" placeholder="Number of baths" />
-             </fieldset>
-             <input type="submit" value="Submit" className="btn"></input>
+              <fieldset>
+                <legend>Inquiry Type</legend>
+                <select>
+                  <option>Select</option>
+                  <option>Purchase</option>
+                  <option>Rent</option>
+                  <option>Sell</option>
+                  <option>Miss</option>
+                  <option>Evaluation</option>
+                  <option>Mortgage</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <legend>Your Information</legend>
+                <select>
+                  <option>I'm a</option>
+                  <option>I'm a real estate agent</option>
+                  <option>I'm a property owner</option>
+                </select>
+                <input
+                  className="smallFieldInput odd"
+                  type="text"
+                  placeholder="First Name"
+                ></input>
+                <input
+                  className="smallFieldInput"
+                  type="text"
+                  placeholder="Last Name"
+                ></input>
+                <input type="email" placeholder="Email Address"></input>
+              </fieldset>
+              <fieldset>
+                <legend>Property Details</legend>
+                <select>
+                  <option value="">Select type</option>
+                  <option value="">Apartment</option>
+                  <option value="">Condo</option>
+                  <option value="">Lot</option>
+                  <option value="">Multi family home</option>
+                  <option value="">Office</option>
+                  <option value="">Shop</option>
+                  <option value="">Single family home</option>
+                  <option value="">Studio</option>
+                  <option value="">Villa</option>
+                </select>
+                <input
+                  type="number"
+                  className="smallFieldInput odd"
+                  placeholder="Max Price"
+                />
+                <input
+                  type="number"
+                  className="smallFieldInput"
+                  placeholder="Minimum Size(Sq Ft)"
+                />
+                <input
+                  type="number"
+                  className="smallFieldInput odd"
+                  placeholder="Number of beds"
+                />
+                <input
+                  type="number"
+                  className="smallFieldInput"
+                  placeholder="Number of baths"
+                />
+              </fieldset>
+              <input type="submit" value="Submit" className="btn"></input>
             </form>
           </div>
         </div>
@@ -366,7 +390,65 @@ function Home() {
             <h3>Testimonials</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
           </div>
-          <div className="testimonials-body"></div>
+          <div className="testimonials-body">
+            <div className="testimonial-card">
+              <i className="fa-solid fa-quote-left"></i>
+              <p className="testimonial-p">
+                Really good Theme. We can't understand how we've been living
+                without Houzez.
+              </p>
+              <div>
+                <img
+                  src="/images/testimonials/testimonial-1.jpg"
+                  alt=""
+                  className="testimonial-image"
+                />
+                <p>
+                  by <strong>Roy Bennett</strong>
+                  <br />
+                  <em>Marketing Manager, Envato</em>
+                </p>
+              </div>
+            </div>
+            <div className="testimonial-card">
+              <i className="fa-solid fa-quote-left"></i>
+              <p className="testimonial-p">
+                Great work on your Houzez. I like it more and more each day
+                because it makes my life easier and lot profitable.
+              </p>
+              <div>
+                <img
+                  src="/images/testimonials/testimonial-2.jpg"
+                  alt=""
+                  className="testimonial-image"
+                />
+                <p>
+                  by <strong>Kenneth Sandoval</strong>
+                  <br />
+                  <em>Realtor, Envato</em>
+                </p>
+              </div>
+            </div>
+            <div className="testimonial-card">
+              <i className="fa-solid fa-quote-left"></i>
+              <p className="testimonial-p">
+                Houzez is the next killer theme. I strongly recommend Houzez to
+                everyone interested in running a successful online business!
+              </p>
+              <div>
+                <img
+                  src="/images/testimonials/testimonial-3.jpg"
+                  alt=""
+                  className="testimonial-image"
+                />
+                <p>
+                  by <strong>Kathleen Peterson</strong>
+                  <br />
+                  <em>Sales Manager, Envato</em>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

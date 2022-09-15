@@ -257,19 +257,18 @@
     url("../../../public/images/apartment-4.jpg");
   background-size: cover;
   background-attachment: fixed;
-  .container{
+  .container {
     display: flex;
     justify-content: space-between;
     gap: 10%;
-
   }
-  .forms-header{
+  .forms-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 50%;
     color: white;
-    >h3{
+    > h3 {
       font-family: var(--ff-heading);
       font-size: var(--fs-secondary-heading);
       font-weight: var(--fw-medium);
@@ -278,7 +277,7 @@
       line-height: 1.2;
       overflow-wrap: break-word;
     }
-    p{
+    p {
       color: rgba(255, 255, 255, 0.8);
       font-family: var(--ff-body);
       font-size: var(--fs-default);
@@ -288,49 +287,50 @@
       text-align: left;
       margin-bottom: 50px;
     }
-    &::after{
+    &::after {
       content: "";
       width: 18%;
       background-color: white;
       height: 1px;
     }
   }
-.form{
+  .form {
     width: 50%;
     background-color: white;
     padding: 40px;
     font-family: var(--ff-body);
     font-weight: var(--fw-medium);
 
-    fieldset{
+    fieldset {
       border: 0;
-      legend{
+      legend {
         font-weight: 600;
         font-size: 14px;
       }
     }
-    
-    select, input[type="email"], .smallFieldInput{
+
+    select,
+    input[type="email"],
+    .smallFieldInput {
       width: 100%;
       height: 50px;
       padding: 0 20px;
       outline: none;
-      border: 2px solid #DCE0E0;
+      border: 2px solid #dce0e0;
       border-radius: 3px;
       color: rgba(0, 0, 0, 0.5);
       margin-bottom: 10px;
     }
-    input[type="submit"]{
-      width:100%;
+    input[type="submit"] {
+      width: 100%;
     }
-    .smallFieldInput{
+    .smallFieldInput {
       width: 49%;
     }
-    .odd{
+    .odd {
       margin-right: 2%;
     }
-}
-
+  }
 }
 
 .content-types-section-container {
@@ -448,6 +448,7 @@
   }
   .agents-body {
     display: flex;
+    gap: 1px;
 
     .agent-card {
       text-align: center;
@@ -499,9 +500,69 @@
 }
 
 .testimonials-section-container {
-  height: 70vh;
   width: 100%;
   border-bottom: 1px solid lightgray;
+  padding: 150px 0;
+  .testimonials-header {
+    text-align: center;
+    margin-bottom: 50px;
+    h3 {
+      font-family: var(--ff-heading);
+      font-size: var(--fs-secondary-heading);
+      font-weight: var(--fw-medium);
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #7a7a7a;
+      font-family: var(--ff-body);
+      font-size: var(--fs-default);
+      font-weight: var(--fw-regular);
+      line-height: 1.5em;
+    }
+  }
+  .testimonials-body {
+    display: flex;
+    gap: 3%;
+    i {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .testimonial-card {
+      background-color: #edf9ff;
+      padding: 50px 40px;
+      width: 33%;
+      .testimonial-p {
+        font-family: var(--ff-body);
+        font-size: var(--fw-regular);
+        font-weight: var(--fw-regular);
+        margin-bottom: 50px;
+        height: 80px;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        font-size: 15px;
+        img {
+          border-radius: 50%;
+          width: 90px;
+        }
+        p {
+          display: inline-block;
+          font-weight: 100;
+          font-family: var(--ff-body);
+          font-size: 14px;
+          strong {
+            font-weight: 600;
+          }
+          em {
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
 }
 
 // sponsors section
