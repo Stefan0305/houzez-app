@@ -253,14 +253,111 @@ function About() {
 
       <section className="blog">
         <div className="container">
-          <div className="blog-heading">
+          <div className="heading">
             <h2>Read From Our Blog</h2>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Officiis, id?
             </p>
           </div>
-          <div className="blog-body"></div>
+          <div className="blog-body">
+            <div className="blog-card">
+              <a href="">
+                <div className="blog-image">
+                  <img src="/images/apartment-4.jpg" alt="" />
+                  <div className="overlay"></div>
+                </div>
+              </a>
+              <div className="blog-details">
+                <div className="tags">
+                  <i className="fa-solid fa-calendar-days"></i>March 9, 2016
+                  <i className="fa-solid fa-tag"></i>
+                  <a href="">Business</a>
+                </div>
+                <h4>Skills That You Can Learn In The Real Estate Market</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  mollis et sem sed sollicitudin. Donec...
+                </p>
+                <a href="">Continue reading</a>
+                <div className="user">
+                  <i className="fa-solid fa-user"></i>by Mike Moore
+                </div>
+              </div>
+            </div>
+            <div className="blog-card">
+              <a href="">
+                <div className="blog-image">
+                  <img src="/images/apartment-4.jpg" alt="" />
+                  <div className="overlay"></div>
+                </div>
+              </a>
+              <div className="blog-details">
+                <div className="tags">
+                  <i className="fa-solid fa-calendar-days"></i>March 9, 2016
+                  <i className="fa-solid fa-tag"></i>
+                  <a href="">Construction</a>
+                </div>
+                <h4>Skills That You Can Learn In The Real Estate Market</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  mollis et sem sed sollicitudin. Donec...
+                </p>
+                <a href="">Continue reading</a>
+                <div className="user">
+                  <i className="fa-solid fa-user"></i>by Mike Moore
+                </div>
+              </div>
+            </div>
+            <div className="blog-card">
+              <a href="">
+                <div className="blog-image">
+                  <img src="/images/apartment-4.jpg" alt="" />
+                  <div className="overlay"></div>
+                </div>
+              </a>
+              <div className="blog-details">
+                <div className="tags">
+                  <i className="fa-solid fa-calendar-days"></i>March 9, 2016
+                  <i className="fa-solid fa-tag"></i>
+                  <a href="">Real Estate</a>
+                </div>
+                <h4>Skills That You Can Learn In The Real Estate Market</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  mollis et sem sed sollicitudin. Donec...
+                </p>
+                <a href="">Continue reading</a>
+                <div className="user">
+                  <i className="fa-solid fa-user"></i>by Mike Moore
+                </div>
+              </div>
+            </div>
+            <div className="blog-card">
+              <a href="">
+                <div className="blog-image">
+                  <img src="/images/apartment-4.jpg" alt="" />
+                  <div className="overlay"></div>
+                </div>
+              </a>
+              <div className="blog-details">
+                <div className="tags">
+                  <i className="fa-solid fa-calendar-days"></i>March 9, 2016
+                  <i className="fa-solid fa-tag"></i>
+                  <a href="">Real Estate</a>
+                </div>
+                <h4>Skills That You Can Learn In The Real Estate Market</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  mollis et sem sed sollicitudin. Donec...
+                </p>
+                <a href="">Continue reading</a>
+                <div className="user">
+                  <i className="fa-solid fa-user"></i>by Mike Moore
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
