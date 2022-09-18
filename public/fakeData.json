@@ -1,0 +1,110 @@
+[
+    {
+      "id": 1,
+      "name": "Renovated studio",
+      "price": "$540,000",
+      "status": "FOR SALE",
+      "type": "Studio",
+      "featured": true,
+      "numberOfBeds": 4,
+      "numberOfShowers": 2,
+      "area": 1200,
+      "imageUrl": "/images/office-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Modern apartment on the bay",
+      "price": "$4,500",
+      "status": "FOR RENT",
+      "type": "Apartment",
+      "featured": true,
+      "numberOfBeds": 4,
+      "numberOfShowers": 2,
+      "area": 1200,
+      "imageUrl": "/images/apartment-1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Renovated studio",
+      "price": "$540,000",
+      "status": "FOR SALE",
+      "type": "Studio",
+      "featured": true,
+      "numberOfBeds": 4,
+      "numberOfShowers": 2,
+      "area": 1200,
+      "imageUrl": "/images/office-1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Modern apartment on the bay",
+      "price": "$4,500",
+      "status": "FOR RENT",
+      "type": "Apartment",
+      "featured": true,
+      "numberOfBeds": 4,
+      "numberOfShowers": 2,
+      "area": 1200,
+      "imageUrl": "/images/apartment-1.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Renovated studio",
+      "price": "$540,000",
+      "status": "FOR SALE",
+      "type": "Studio",
+      "featured": true,
+      "numberOfBeds": 4,
+      "numberOfShowers": 2,
+      "area": 1200,
+      "imageUrl": "/images/office-1.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Modern apartment on the bay",
+      "price": "$4,500",
+      "status": "FOR RENT",
+      "type": "Apartment",
+      "featured": true,
+      "numberOfBeds": 4,
+      "numberOfShowers": 2,
+      "area": 1200,
+      "imageUrl": "/images/apartment-1.jpg"
+    },
+    {  
+    "id": 7,
+    "name": "Modern apartment on the bay",
+    "price": "$4,500",
+    "status": "FOR RENT",
+    "type": "Apartment",
+    "featured": true,
+    "numberOfBeds": 4,
+    "numberOfShowers": 2,
+    "area": 1200,
+    "imageUrl": "/images/apartment-1.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Renovated studio",
+    "price": "$540,000",
+    "status": "FOR SALE",
+    "type": "Studio",
+    "featured": true,
+    "numberOfBeds": 4,
+    "numberOfShowers": 2,
+    "area": 1200,
+    "imageUrl": "/images/office-1.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Modern apartment on the bay",
+    "price": "$4,500",
+    "status": "FOR RENT",
+    "type": "Apartment",
+    "featured": true,
+    "numberOfBeds": 4,
+    "numberOfShowers": 2,
+    "area": 1200,
+    "imageUrl": "/images/apartment-1.jpg"
+  }
+  ]
