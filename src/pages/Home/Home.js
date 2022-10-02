@@ -2,28 +2,27 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import FeaturedCard from "../../components/FeaturedCard/FeaturedCard";
 import Testimonials from "../../components/Testimonials/Testimonials";
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 import "./Home.scss";
 
 function Home() {
-
   const [featured, setFeatured] = useState(false);
 
-  async function fetchData(){
-    await fetch('fakeData.json', {
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      }
-   })
-   .then( res => res.json())
-   .then(data=> setFeatured(data.filter(e=> e.featured===true)));
+  async function fetchData() {
+    await fetch("fakeData.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => setFeatured(data.filter((e) => e.featured === true)));
   }
-  useEffect(()=> {
+  useEffect(() => {
     fetchData();
-  }, [])
+  }, []);
 
   return (
     <main>
@@ -85,25 +84,34 @@ function Home() {
           </div>
         </div>
         <div className="features">
-            {featured ? 
-            <AliceCarousel 
-            mouseTracking 
-            autoPlay={true} 
-            responsive={{0: {items:1}, 768: {items: 2}, 992: {items: 4}}} 
-            disableButtonsControls={false} 
-            controlsStrategy={"alternate"} 
-            autoPlayInterval={3000} 
-            items={featured.map(e=><FeaturedCard key={e.id} props={e}/>)}
-            infinite={true}
-            renderPrevButton={() => {
-              return <button className="btn btnPrev">Prev</button>
-            }}
-            renderNextButton={() => {
-              return <button className="btn btnNext">Next</button>
-            }}
-            ></AliceCarousel> : ""}         
-            {/* {featured ? featured.map(e=><FeaturedCard key={e.id} props={e}/>) : ""} */}
-          </div>
+          {featured ? (
+            <AliceCarousel
+              mouseTracking
+              autoPlay={true}
+              responsive={{
+                0: { items: 1 },
+                768: { items: 2 },
+                992: { items: 4 },
+              }}
+              disableButtonsControls={false}
+              controlsStrategy={"alternate"}
+              autoPlayInterval={3000}
+              items={featured.map((e) => (
+                <FeaturedCard key={e.id} props={e} />
+              ))}
+              infinite={true}
+              renderPrevButton={() => {
+                return <button className="btn btnPrev">Prev</button>;
+              }}
+              renderNextButton={() => {
+                return <button className="btn btnNext">Next</button>;
+              }}
+            ></AliceCarousel>
+          ) : (
+            ""
+          )}
+          {/* {featured ? featured.map(e=><FeaturedCard key={e.id} props={e}/>) : ""} */}
+        </div>
         <div className="clip-bottom"></div>
       </section>
 
@@ -154,7 +162,7 @@ function Home() {
                   presentations
                 </p>
               </div>
-              <div className="grid-item big-box">
+              <div className="grid-item underheader big-box">
                 <div className="box-overlay"></div>
                 <div className="grid-title">
                   <p>7 Properties</p>

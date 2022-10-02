@@ -130,8 +130,10 @@
   background-color: var(--clr-background-dark_blue);
   .container {
     padding: 50px 0 200px 0;
-    display: flex;
-    gap: 1px;
+    @media (min-width: 768px) {
+      display: flex;
+      gap: 1px;
+    }
   }
 }
 
@@ -178,9 +180,9 @@
   width: 100%;
   padding: 100px 0;
 
-  .features-section-header{
+  .features-section-header {
     margin-bottom: 80px;
-    h3{
+    h3 {
       font-family: var(--ff-heading);
       font-size: 35px;
       font-weight: var(--fw-medium);
@@ -189,7 +191,7 @@
       line-height: 1.2;
       text-align: center;
     }
-    p{
+    p {
       color: #7a7a7a;
       font-family: var(--ff-body);
       font-size: 18px;
@@ -201,13 +203,13 @@
     }
   }
 
-  .features{
+  .features {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
 
-    button{
+    button {
       border: 1px solid var(--clr-primary-cyan);
       color: var(--clr-primary-cyan);
       background-color: transparent;
@@ -217,17 +219,17 @@
       font-weight: 100;
       border-radius: 2px;
       transition: all 0.2s;
-      &:hover{
+      &:hover {
         background-color: var(--clr-primary-cyan);
         color: white;
       }
     }
-    .btnNext{
+    .btnNext {
       top: 0;
       right: 0;
       transform: translate(-30%, -140%);
     }
-    .btnPrev{
+    .btnPrev {
       top: 0;
       right: 0;
       transform: translate(-150%, -140%);
@@ -237,7 +239,7 @@
 
 // widgets section
 .widgets-section-container {
-  padding: 200px 100px 200px 100px;
+  padding: 200px 0;
   background-image: linear-gradient(
       to bottom,
       rgba(0, 66, 116, 0.45),
@@ -253,17 +255,20 @@
     font-weight: var(--fw-thin);
     color: white;
     text-align: center;
-    padding: 50px 120px;
+    padding: 0 20px 50px 20px;
+    margin: auto;
+    max-width: 734px;
   }
 
   .widgets {
     display: flex;
-    gap: 1px;
+    flex-wrap: wrap;
     a {
       display: block;
       background-color: rgba(0, 52, 92, 0.6);
-      width: 25%;
-      aspect-ratio: 1.5/1;
+      width: 100%;
+      padding: 30px 0;
+      margin: 0.5px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -273,25 +278,33 @@
         box-shadow: 0px 60px 100px 10px rgba($color: black, $alpha: 0.3);
         transform: translateY(-10px);
       }
+      @media (min-width: 768px) {
+        width: calc((100% / 2) - 1px);
+      }
+
+      @media (min-width: 992px) {
+        width: calc((100% / 4) - 2px);
+      }
     }
-  }
-  .widget {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    img {
-      width: 50px;
-      margin-bottom: 30px;
-      filter: invert(100%);
-    }
-    p {
-      text-transform: uppercase;
-      font-family: var(--ff-title);
-      color: white;
-      font-weight: var(--fw-regular);
-      font-size: 16px;
-      text-decoration: none;
+
+    .widget {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 50px;
+        margin-bottom: 30px;
+        filter: invert(100%);
+      }
+      p {
+        text-transform: uppercase;
+        font-family: var(--ff-title);
+        color: white;
+        font-weight: var(--fw-regular);
+        font-size: 16px;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -301,27 +314,45 @@
   position: relative;
   padding: 120px 0;
   width: 100%;
-  .big-box {
-    height: 75%;
-  }
-  .small-box {
-    height: 25%;
-  }
-  .medium-box {
-    height: 37.5%;
-  }
+
   .grid {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 80px;
-    height: 850px;
-    .column {
+    padding: 0 40px;
+
+    @media (min-width: 768px) {
       display: flex;
-      flex-direction: column;
-      width: 33%;
-      height: 100%;
-      padding: 0px 12px;
+      justify-content: space-between;
+      max-height: 1168px;
+      aspect-ratio: 1.2 / 1;
+
+      .big-box {
+        flex-basis: 75%;
+      }
+      .small-box {
+        flex-basis: 25%;
+      }
+      .medium-box {
+        flex-basis: 37.5%;
+      }
+
+      .grid-header {
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+
+      .underheader {
+        flex-grow: 2;
+        flex-shrink: 2;
+      }
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+        height: 100%;
+        padding: 0px 12px;
+      }
     }
+
     .grid-header {
       margin: 12px 0;
       padding: 0;
@@ -341,6 +372,9 @@
       }
     }
     .grid-item {
+      @media (max-width: 767px) {
+        aspect-ratio: 1.5 / 1;
+      }
       background-image: url("../../../public/images/apartment-1.jpg");
       background-repeat: no-repeat;
       background-size: cover;
