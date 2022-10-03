@@ -319,7 +319,9 @@ function Home() {
                   placeholder="Number of baths"
                 />
               </fieldset>
-              <input type="submit" value="Submit" className="btn"></input>
+              <button type="submit" value="Submit" className="btn">
+                Submit
+              </button>
             </form>
           </div>
         </div>
