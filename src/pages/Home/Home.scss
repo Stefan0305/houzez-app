@@ -23,12 +23,6 @@
   position: relative;
 }
 .hero-section-heading {
-  // background-image: linear-gradient(
-  //     to bottom,
-  //     rgba(0, 52, 92, 0.3),
-  //     rgba(0, 52, 92, 1)
-  //   ),
-  //   url("../../../public/images/miami-beach.jpg");
   position: relative;
   width: 100%;
   height: 70vh;
@@ -174,7 +168,7 @@
   }
 }
 
-// featuressection
+// features section
 .features-section-container {
   position: relative;
   width: 100%;
@@ -549,10 +543,11 @@
 .content-types-section-container {
   position: relative;
   width: 100%;
-  padding: 120px 0;
+  padding: 150px 0;
   .content-types-header {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
+    max-width: 870px;
     h3 {
       font-family: var(--ff-heading);
       font-size: var(--fs-secondary-heading);
@@ -566,74 +561,103 @@
       font-weight: var(--fw-regular);
       line-height: 1.5em;
       color: #7a7a7a;
-      padding: 0 150px;
     }
   }
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  .small-box {
-    width: 25%;
-    aspect-ratio: 1/1;
-  }
-  .big-box {
-    width: 50%;
-    aspect-ratio: 2 /1;
-  }
+  .content-types {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-  a {
-    padding: 15px;
-    text-decoration: none;
-    color: white;
-  }
-  .content-box {
-    background-image: url("../../../public/images/appartment.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: inherit;
-    width: 100%;
-    height: 100%;
-    border-radius: 3px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    // transition: all 3s;
-    position: relative;
-    z-index: 1;
-    .box-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.3);
-      z-index: 2;
-      transition: all 0.2s;
-      border-radius: 3px;
-    }
-    &:hover {
-      .box-overlay {
-        background-color: rgba($color: #000000, $alpha: 0.1);
+    @media (max-width: 575px) {
+      .small-box {
+        flex-basis: 100%;
+        aspect-ratio: 1 / 0.5;
+      }
+      .big-box {
+        flex-basis: 100%;
+        aspect-ratio: 1 / 0.5;
       }
     }
-    h4 {
-      font-family: var(--ff-title);
-      font-size: var(--fs-title);
-      font-weight: var(--fw-medium);
-      text-transform: uppercase;
-      z-index: 3;
+
+    @media (min-width: 576px) {
+      .small-box {
+        flex-basis: 50%;
+        aspect-ratio: 1 / 0.5;
+      }
+      .big-box {
+        flex-basis: 100%;
+        aspect-ratio: 1 / 0.5;
+      }
     }
-    p {
-      font-family: var(--ff-body);
-      font-size: var(--fs-xxs);
-      font-weight: var(--fw-medium);
-      text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.78);
-      z-index: 3;
+
+    @media (min-width: 768px) {
+      .small-box {
+        aspect-ratio: 1 / 1;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .small-box {
+        flex-basis: 25%;
+        aspect-ratio: 1 / 1;
+      }
+      .big-box {
+        flex-basis: 50%;
+        aspect-ratio: 1 / 0.5;
+      }
+    }
+
+    a {
+      padding: 15px;
+      text-decoration: none;
+      color: white;
+    }
+    .content-box {
+      background-image: url("../../../public/images/appartment.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      border-radius: 3px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      .box-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 2;
+        transition: all 0.2s;
+        border-radius: 3px;
+      }
+      &:hover {
+        .box-overlay {
+          background-color: rgba($color: #000000, $alpha: 0.1);
+        }
+      }
+      h4 {
+        font-family: var(--ff-title);
+        font-size: var(--fs-title);
+        font-weight: var(--fw-medium);
+        text-transform: uppercase;
+        z-index: 3;
+      }
+      p {
+        font-family: var(--ff-body);
+        font-size: var(--fs-xxs);
+        font-weight: var(--fw-medium);
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.78);
+        z-index: 3;
+      }
     }
   }
 }
