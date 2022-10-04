@@ -270,9 +270,13 @@ function About() {
               </a>
               <div className="blog-details">
                 <div className="tags">
-                  <i className="fa-solid fa-calendar-days"></i>March 9, 2016
-                  <i className="fa-solid fa-tag"></i>
-                  <a href="">Business</a>
+                  <div>
+                    <i className="fa-solid fa-calendar-days"></i>March 9, 2016
+                  </div>
+                  <div>
+                    <i className="fa-solid fa-tag"></i>
+                    <a href="">Business</a>
+                  </div>
                 </div>
                 <h4>Skills That You Can Learn In The Real Estate Market</h4>
                 <p>
@@ -294,9 +298,13 @@ function About() {
               </a>
               <div className="blog-details">
                 <div className="tags">
-                  <i className="fa-solid fa-calendar-days"></i>March 9, 2016
-                  <i className="fa-solid fa-tag"></i>
-                  <a href="">Construction</a>
+                  <div>
+                    <i className="fa-solid fa-calendar-days"></i>March 9, 2016
+                  </div>
+                  <div>
+                    <i className="fa-solid fa-tag"></i>
+                    <a href="">Business</a>
+                  </div>
                 </div>
                 <h4>Skills That You Can Learn In The Real Estate Market</h4>
                 <p>
@@ -318,9 +326,13 @@ function About() {
               </a>
               <div className="blog-details">
                 <div className="tags">
-                  <i className="fa-solid fa-calendar-days"></i>March 9, 2016
-                  <i className="fa-solid fa-tag"></i>
-                  <a href="">Real Estate</a>
+                  <div>
+                    <i className="fa-solid fa-calendar-days"></i>March 9, 2016
+                  </div>
+                  <div>
+                    <i className="fa-solid fa-tag"></i>
+                    <a href="">Business</a>
+                  </div>
                 </div>
                 <h4>Skills That You Can Learn In The Real Estate Market</h4>
                 <p>
@@ -342,9 +354,13 @@ function About() {
               </a>
               <div className="blog-details">
                 <div className="tags">
-                  <i className="fa-solid fa-calendar-days"></i>March 9, 2016
-                  <i className="fa-solid fa-tag"></i>
-                  <a href="">Real Estate</a>
+                  <div>
+                    <i className="fa-solid fa-calendar-days"></i>March 9, 2016
+                  </div>
+                  <div>
+                    <i className="fa-solid fa-tag"></i>
+                    <a href="">Business</a>
+                  </div>
                 </div>
                 <h4>Skills That You Can Learn In The Real Estate Market</h4>
                 <p>
