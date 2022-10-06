@@ -1,11 +1,18 @@
+import { useState } from "react";
+
 function HeaderNav() {
+  const [isActive, setIsActive] = useState(false);
+
+  function toggleActive() {
+    setIsActive(!isActive);
+  }
   return (
     <div className="headerNav">
       <ul>
         <li>
           <a href="/">Home</a>
         </li>
-        <li className="toggleDropDown">
+        <li className="toggleDropDown" onClick={toggleActive}>
           <a href="#">
             Listing{" "}
             <i
@@ -13,7 +20,7 @@ function HeaderNav() {
               style={{ marginLeft: "5px" }}
             ></i>
           </a>
-          <ul className="dropdownMenu">
+          <ul className={isActive ? "dropdownMenu active" : "dropdownMenu"}>
             <li>
               <a href="#">Appartment</a>
             </li>

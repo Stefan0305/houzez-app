@@ -170,7 +170,7 @@ function Home() {
                 </div>
                 <div className="grid-details">
                   <p>MORE DETAILS</p>
-                  <i class="fa-solid fa-caret-right"></i>
+                  <i className="fa-solid fa-caret-right"></i>
                 </div>
               </div>
             </div>
@@ -183,7 +183,7 @@ function Home() {
                 </div>
                 <div className="grid-details">
                   <p>MORE DETAILS</p>
-                  <i class="fa-solid fa-caret-right"></i>
+                  <i className="fa-solid fa-caret-right"></i>
                 </div>
               </div>
               <div className="grid-item small-box">
@@ -194,7 +194,7 @@ function Home() {
                 </div>
                 <div className="grid-details">
                   <p>MORE DETAILS</p>
-                  <i class="fa-solid fa-caret-right"></i>
+                  <i className="fa-solid fa-caret-right"></i>
                 </div>
               </div>
               <div className="grid-item medium-box">
@@ -205,7 +205,7 @@ function Home() {
                 </div>
                 <div className="grid-details">
                   <p>MORE DETAILS</p>
-                  <i class="fa-solid fa-caret-right"></i>
+                  <i className="fa-solid fa-caret-right"></i>
                 </div>
               </div>
             </div>
@@ -218,7 +218,7 @@ function Home() {
                 </div>
                 <div className="grid-details">
                   <p>MORE DETAILS</p>
-                  <i class="fa-solid fa-caret-right"></i>
+                  <i className="fa-solid fa-caret-right"></i>
                 </div>
               </div>
               <div className="grid-item small-box">
@@ -229,7 +229,7 @@ function Home() {
                 </div>
                 <div className="grid-details">
                   <p>MORE DETAILS</p>
-                  <i class="fa-solid fa-caret-right"></i>
+                  <i className="fa-solid fa-caret-right"></i>
                 </div>
               </div>
             </div>
