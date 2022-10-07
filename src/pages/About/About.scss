@@ -26,6 +26,13 @@
     display: flex;
     justify-content: space-evenly;
     gap: 50px;
+    @media (max-width: 575px) {
+      flex-direction: column;
+      gap: 0;
+      .column {
+        width: 100%;
+      }
+    }
     p {
       font-family: var(--ff-body);
       color: #54595f;
@@ -65,9 +72,16 @@
 
   .our-team-body {
     display: flex;
+    flex-direction: column;
     gap: 20px;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      .employee-card {
+        width: 25%;
+      }
+    }
     .employee-card {
-      width: 25%;
+      width: 100%;
       position: relative;
       overflow: hidden;
       cursor: pointer;
@@ -131,10 +145,13 @@
       top: 0;
       width: 100%;
       height: 100%;
-      padding: 30px 20px;
+      padding: 20px 20px;
       text-align: center;
       background-color: rgba($color: #fff, $alpha: 0.9);
       transition: all 0.2s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       > :first-child {
         font-weight: 600;
         margin-bottom: 5px;
@@ -149,24 +166,29 @@
         margin-bottom: 20px;
         font-size: 14px;
         padding: 0 10px;
+        @media (min-width: 768px) and (max-width: 991px) {
+          display: none;
+        }
       }
       > div {
         margin: 0 auto;
         display: flex;
-        justify-content: space-evenly;
-        width: 60%;
-        margin: 0 auto;
+        justify-content: center;
         .fa-facebook-f {
           color: #506dab;
+          margin-right: 10px;
         }
         .fa-twitter {
           color: #00aced;
+          margin-right: 10px;
         }
         .fa-google-plus-g {
           color: #dd4b39;
+          margin-right: 10px;
         }
         .fa-linkedin-in {
           color: #007bb6;
+          margin-right: 10px;
         }
         .fa-instagram {
           color: deeppink;
@@ -194,20 +216,33 @@
     }
   }
   .services-body {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    height: 80vh;
-  }
-  .small-box {
-    height: calc(50% - 20px);
-    width: calc(25% - 20px);
-    margin: 10px 10px;
-  }
-  .big-box {
-    height: calc(100% - 10px);
-    width: calc(25% - 10px);
-    margin: 10px 10px;
+    flex-wrap: wrap;
+    @media (max-width: 767px) {
+      gap: 20px;
+      .small-box,
+      .big-box {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+      }
+    }
+    @media (min-width: 768px) {
+      aspect-ratio: 1/0.5;
+      gap: 20px;
+      justify-content: space-between;
+      .small-box,
+      .big-box {
+        width: calc((100% - 60px) / 4);
+      }
+      .small-box {
+        aspect-ratio: 1/1;
+      }
+      .big-box {
+        height: 100%;
+      }
+    }
   }
   .box-item {
     background-image: url("../../../public/images/apartment-3.jpg");
@@ -239,6 +274,17 @@
       }
     }
   }
+  .box-title {
+    z-index: 5;
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-regular);
+    p {
+      font-size: var(--fs-xxs);
+    }
+    h4 {
+      font-size: var(--fs-default);
+    }
+  }
   .box-details {
     display: flex;
     justify-content: space-between;
@@ -253,20 +299,10 @@
       font-size: var(--fs-xxs);
     }
   }
-  .box-title {
-    z-index: 5;
-    font-family: var(--ff-heading);
-    font-weight: var(--fw-regular);
-    p {
-      font-size: var(--fs-xxs);
-    }
-    h4 {
-      font-size: var(--fs-title);
-    }
-  }
 }
 
-.blog{
+// blog section
+.blog {
   background-color: #f8f8f8;
   padding: 100px 0;
   .heading {
@@ -284,95 +320,102 @@
     }
   }
 
-  .blog-body{
+  .blog-body {
     display: flex;
-    gap: 20px;
-    .blog-card{
-      padding: 5px;
+    flex-wrap: wrap;
+    gap: 10px;
+    .blog-card {
+      padding: 10px;
       background-color: white;
-      .blog-image{
+      width: 100%;
+      @media (min-width: 768px) {
+        width: calc((100% - 10px) / 2);
+      }
+      @media (min-width: 992px) {
+        width: calc((100% - 30px) / 4);
+      }
+      .blog-image {
         position: relative;
-        height: 180px;
-        img{
+        img {
           border-radius: 3px;
-          height: 100%;
         }
-        .overlay{
+        .overlay {
           border-radius: 3px;
-        width: 100%;
-        height: 50%;
-        position: absolute;
-        bottom: 0;
-        background: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 0),
-          rgba(0, 0, 0, 0.5)
-        );
-        transition: all 0.2s;
+          width: 100%;
+          height: 50%;
+          position: absolute;
+          bottom: 0;
+          background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.5)
+          );
+          transition: all 0.2s;
         }
-        &:hover{
-          .overlay{
+        &:hover {
+          .overlay {
             opacity: 0;
           }
         }
       }
-      .blog-details{
+      .blog-details {
         padding: 10px;
-        a{
+        a {
           text-decoration: none;
           color: var(--clr-primary-cyan);
         }
-        .tags{
+        .tags {
           display: flex;
+          flex-wrap: wrap;
           justify-content: flex-start;
           align-items: center;
           font-size: 12px;
           font-family: var(--ff-body);
           font-weight: 300;
           padding: 3px 0;
-          gap: 20px;
+          column-gap: 20px;
+          row-gap: 5px;
           color: #626262;
-          i{
-            margin-right: -15px;
+          i {
+            margin-right: 7px;
           }
-          >a{
+          > a {
             font-weight: 300;
             font-size: 12px;
             font-family: var(--ff-body);
           }
         }
         text-align: left;
-        h4{
-            margin-bottom: 10px;
-            font-family: var(--ff-body);
-            font-weight: 500;
-            font-size: 16px;
+        h4 {
+          margin-bottom: 10px;
+          font-family: var(--ff-body);
+          font-weight: 500;
+          font-size: 16px;
         }
-        p{
-           font-weight: 300;
-           font-size: 12px;
-           font-family: var(--ff-body);
-            color:#626262;
+        p {
+          font-weight: 300;
+          font-size: 12px;
+          font-family: var(--ff-body);
+          color: #626262;
           padding-bottom: 10px;
         }
-        >a{
+        > a {
           font-size: 14px;
           font-weight: 500;
         }
-        .user{
-          border-top: 1px solid rgba(62, 62, 62, .4);
+        .user {
+          border-top: 1px solid rgba(62, 62, 62, 0.4);
           padding: 10px 0;
           margin-top: 20px;
           font-weight: 300;
           font-family: var(--ff-body);
           font-size: 12px;
           color: #626262;
-          i{
+          i {
             margin-right: 10px;
           }
         }
       }
     }
   }
-  
 }

@@ -69,6 +69,16 @@
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 991px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: min(90%, 1200px - 2rem);
+  }
+}
 .btn {
   background-color: var(--clr-primary-cyan);
   color: white;
