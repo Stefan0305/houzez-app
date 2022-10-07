@@ -56,7 +56,7 @@
     top: 58%;
     left: 50%;
     z-index: 4;
-    display: inline-block;
+    // display: inline-block;
     width: 54%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -75,6 +75,14 @@
       font-size: var(--fs-primary-heading-body);
       font-weight: var(--fw-regular);
       line-height: 1.5em;
+    }
+    @media (max-width: 576px) {
+      h1 {
+        font-size: var(--fs-primary-heading-body);
+      }
+      p {
+        font-size: var(--fs-default);
+      }
     }
   }
 }
