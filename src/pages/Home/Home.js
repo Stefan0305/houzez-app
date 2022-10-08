@@ -2,28 +2,27 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import FeaturedCard from "../../components/FeaturedCard/FeaturedCard";
 import Testimonials from "../../components/Testimonials/Testimonials";
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 import "./Home.scss";
 
 function Home() {
-
   const [featured, setFeatured] = useState(false);
 
-  async function fetchData(){
-    await fetch('fakeData.json', {
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      }
-   })
-   .then( res => res.json())
-   .then(data=> setFeatured(data.filter(e=> e.featured===true)));
+  async function fetchData() {
+    await fetch("fakeData.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => setFeatured(data.filter((e) => e.featured === true)));
   }
-  useEffect(()=> {
+  useEffect(() => {
     fetchData();
-  }, [])
+  }, []);
 
   return (
     <main>
@@ -85,25 +84,34 @@ function Home() {
           </div>
         </div>
         <div className="features">
-            {featured ? 
-            <AliceCarousel 
-            mouseTracking 
-            autoPlay={true} 
-            responsive={{0: {items:1}, 768: {items: 2}, 992: {items: 4}}} 
-            disableButtonsControls={false} 
-            controlsStrategy={"alternate"} 
-            autoPlayInterval={3000} 
-            items={featured.map(e=><FeaturedCard key={e.id} props={e}/>)}
-            infinite={true}
-            renderPrevButton={() => {
-              return <button className="btn btnPrev">Prev</button>
-            }}
-            renderNextButton={() => {
-              return <button className="btn btnNext">Next</button>
-            }}
-            ></AliceCarousel> : ""}         
-            {/* {featured ? featured.map(e=><FeaturedCard key={e.id} props={e}/>) : ""} */}
-          </div>
+          {featured ? (
+            <AliceCarousel
+              mouseTracking
+              autoPlay={false}
+              responsive={{
+                0: { items: 1 },
+                767: { items: 2 },
+                991: { items: 4 },
+              }}
+              disableButtonsControls={false}
+              controlsStrategy={"alternate"}
+              autoPlayInterval={3000}
+              items={featured.map((e) => (
+                <FeaturedCard key={e.id} props={e} />
+              ))}
+              infinite={true}
+              renderPrevButton={() => {
+                return <button className="btn btnPrev">Prev</button>;
+              }}
+              renderNextButton={() => {
+                return <button className="btn btnNext">Next</button>;
+              }}
+            ></AliceCarousel>
+          ) : (
+            ""
+          )}
+          {/* {featured ? featured.map(e=><FeaturedCard key={e.id} props={e}/>) : ""} */}
+        </div>
         <div className="clip-bottom"></div>
       </section>
 
@@ -154,7 +162,7 @@ function Home() {
                   presentations
                 </p>
               </div>
-              <div className="grid-item big-box">
+              <div className="grid-item underheader big-box">
                 <div className="box-overlay"></div>
                 <div className="grid-title">
                   <p>7 Properties</p>
@@ -162,7 +170,7 @@ function Home() {
                 </div>
                 <div className="grid-details">
                   <p>MORE DETAILS</p>
-                  <i class="fa-solid fa-caret-right"></i>
+                  <i className="fa-solid fa-caret-right"></i>
                 </div>
               </div>
             </div>
@@ -175,7 +183,7 @@ function Home() {
                 </div>
                 <div className="grid-details">
                   <p>MORE DETAILS</p>
-                  <i class="fa-solid fa-caret-right"></i>
+                  <i className="fa-solid fa-caret-right"></i>
                 </div>
               </div>
               <div className="grid-item small-box">
@@ -186,7 +194,7 @@ function Home() {
                 </div>
                 <div className="grid-details">
                   <p>MORE DETAILS</p>
-                  <i class="fa-solid fa-caret-right"></i>
+                  <i className="fa-solid fa-caret-right"></i>
                 </div>
               </div>
               <div className="grid-item medium-box">
@@ -197,7 +205,7 @@ function Home() {
                 </div>
                 <div className="grid-details">
                   <p>MORE DETAILS</p>
-                  <i class="fa-solid fa-caret-right"></i>
+                  <i className="fa-solid fa-caret-right"></i>
                 </div>
               </div>
             </div>
@@ -210,7 +218,7 @@ function Home() {
                 </div>
                 <div className="grid-details">
                   <p>MORE DETAILS</p>
-                  <i class="fa-solid fa-caret-right"></i>
+                  <i className="fa-solid fa-caret-right"></i>
                 </div>
               </div>
               <div className="grid-item small-box">
@@ -221,7 +229,7 @@ function Home() {
                 </div>
                 <div className="grid-details">
                   <p>MORE DETAILS</p>
-                  <i class="fa-solid fa-caret-right"></i>
+                  <i className="fa-solid fa-caret-right"></i>
                 </div>
               </div>
             </div>
@@ -311,7 +319,9 @@ function Home() {
                   placeholder="Number of baths"
                 />
               </fieldset>
-              <input type="submit" value="Submit" className="btn"></input>
+              <button type="submit" value="Submit" className="btn">
+                Submit
+              </button>
             </form>
           </div>
         </div>
@@ -331,77 +341,77 @@ function Home() {
         </div>
         <div className="content-types">
           <div className="container">
-            <div className="row">
-              <a href="#" className="big-box">
-                <div className="content-box">
-                  <div className="box-overlay"></div>
-                  <h4>Appartment</h4>
-                  <p>17 properties</p>
-                </div>
-              </a>
-              <a href="#" className="small-box">
-                <div className="content-box">
-                  <div className="box-overlay"></div>
-                  <h4>Villa</h4>
-                  <p>10 properties</p>
-                </div>
-              </a>
-              <a href="#" className="small-box">
-                <div className="content-box">
-                  <div className="box-overlay"></div>
-                  <h4>Single family home</h4>
-                  <p>10 properties</p>
-                </div>
-              </a>
-            </div>
+            {/* <div className="row"> */}
+            <a href="#" className="big-box">
+              <div className="content-box">
+                <div className="box-overlay"></div>
+                <h4>Appartment</h4>
+                <p>17 properties</p>
+              </div>
+            </a>
+            <a href="#" className="small-box">
+              <div className="content-box">
+                <div className="box-overlay"></div>
+                <h4>Villa</h4>
+                <p>10 properties</p>
+              </div>
+            </a>
+            <a href="#" className="small-box">
+              <div className="content-box">
+                <div className="box-overlay"></div>
+                <h4>Single family home</h4>
+                <p>10 properties</p>
+              </div>
+            </a>
+            {/* </div> */}
 
-            <div className="row">
-              <a href="" className="small-box">
-                <div className="content-box">
-                  <div className="box-overlay"></div>
-                  <h4>Studio</h4>
-                  <p>7 properties</p>
-                </div>
-              </a>
-              <a href="#" className="small-box">
-                <div className="content-box">
-                  <div className="box-overlay"></div>
-                  <h4>shop</h4>
-                  <p>3 properties</p>
-                </div>
-              </a>
-              <a href="#" className="big-box">
-                <div className="content-box">
-                  <div className="box-overlay"></div>
-                  <h4>office</h4>
-                  <p>3 properties</p>
-                </div>
-              </a>
-            </div>
+            {/* <div className="row"> */}
+            <a href="" className="small-box">
+              <div className="content-box">
+                <div className="box-overlay"></div>
+                <h4>Studio</h4>
+                <p>7 properties</p>
+              </div>
+            </a>
+            <a href="#" className="small-box">
+              <div className="content-box">
+                <div className="box-overlay"></div>
+                <h4>shop</h4>
+                <p>3 properties</p>
+              </div>
+            </a>
+            <a href="#" className="big-box">
+              <div className="content-box">
+                <div className="box-overlay"></div>
+                <h4>office</h4>
+                <p>3 properties</p>
+              </div>
+            </a>
+            {/* </div> */}
 
-            <div className="row">
-              <a href="#" className="big-box">
-                <div className="content-box">
-                  <div className="box-overlay"></div>
-                  <h4>condo</h4>
-                  <p>1 property</p>
-                </div>
-              </a>
-              <a href="#" className="small-box">
-                <div className="content-box">
-                  <div className="box-overlay"></div>
-                  <h4>lot</h4>
-                  <p>1 property</p>
-                </div>
-              </a>
-              <a href="#" className="small-box">
-                <div className="content-box">
-                  <div className="box-overlay"></div>
-                  <h4>multi family home</h4>
-                  <p>1 property</p>
-                </div>
-              </a>
-            </div>
+            {/* <div className="row"> */}
+            <a href="#" className="big-box">
+              <div className="content-box">
+                <div className="box-overlay"></div>
+                <h4>condo</h4>
+                <p>1 property</p>
+              </div>
+            </a>
+            <a href="#" className="small-box">
+              <div className="content-box">
+                <div className="box-overlay"></div>
+                <h4>lot</h4>
+                <p>1 property</p>
+              </div>
+            </a>
+            <a href="#" className="small-box">
+              <div className="content-box">
+                <div className="box-overlay"></div>
+                <h4>multi family home</h4>
+                <p>1 property</p>
+              </div>
+            </a>
+            {/* </div> */}
           </div>
         </div>
       </section>
