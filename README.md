@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://houzez-app.herokuapp.com/)
+[Live Demo Link](https://jade-druid-9718dc.netlify.app/)
 
 ## Getting Started
 

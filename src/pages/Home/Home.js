@@ -87,7 +87,7 @@ function Home() {
           {featured ? (
             <AliceCarousel
               mouseTracking
-              autoPlay={false}
+              autoPlay={true}
               responsive={{
                 0: { items: 1 },
                 767: { items: 2 },
